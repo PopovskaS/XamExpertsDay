@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="XamExpertsDay.Views.AboutPage" xmlns:vm="clr-namespace:XamExpertsDay.ViewModels" Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:AboutViewModel />
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical">
+        <StackLayout Padding="40, 60,40, 60" Orientation="Vertical" BackgroundColor="#3C477E" HorizontalOptions="Fill">
+                <Image Source="xamexpertdaylogo.png" HorizontalOptions="Center" VerticalOptions="Center" />
+        </StackLayout>
+        <StackLayout Orientation="Vertical"  HorizontalOptions="Center" Spacing="10" Margin="20">
+            <Label Text="Expert Day for Xamarin" Margin="10, 20, 10, 20" HorizontalTextAlignment="Center"  FontAttributes="Bold" FontSize="22" />
+            <Label Text="October 25th, Cologne, Germany" HorizontalTextAlignment="Center"   Margin="10, 0, 10, 20"/>
+            <Button Text="Learn more" Command="{Binding OpenWebCommand}" BackgroundColor="#2f3c7e" TextColor="White" />
+        </StackLayout>
+        </StackLayout>
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="XamExpertsDay.Views.ItemsPage" Title="{Binding Title}" x:Name="BrowseItemsPage">
+   <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="ItemsListView" ItemsSource="{Binding Items}" VerticalOptions="FillAndExpand" HasUnevenRows="true" RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10">
+                                <Label Text="{Binding title}" Style="{DynamicResource ListItemTextStyle}" FontSize="16" Font="Bold" TextColor="#2f3c7e" />
+                            <StackLayout Orientation="Horizontal">
+                                    <Label Text="From: "  Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" TextColor="Gray" />
+                                    <Label Text="{Binding startsAt, StringFormat='{}{0:HH:mm}'}" TextColor="Gray"  Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                                     </StackLayout>
+                                 <StackLayout Orientation="Horizontal">
+                                    <Label Text="To: "  Style="{DynamicResource ListItemDetailTextStyle}" TextColor="Gray" FontSize="13" />
+                                    <Label Text="{Binding endsAt, StringFormat='{}{0:HH:mm}'}" TextColor="Gray" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
