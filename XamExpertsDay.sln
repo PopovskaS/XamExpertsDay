@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamExpertsDay.iOS", "XamExp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamExpertsDay", "XamExpertsDay\XamExpertsDay.csproj", "{081AA335-9063-42E3-A6EE-25522258983B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamExpertsDay.UITests", "XamExpertsDay.UITests\XamExpertsDay.UITests.csproj", "{346EF80F-8E3A-4166-8D70-B264AA0DAB08}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{081AA335-9063-42E3-A6EE-25522258983B}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{081AA335-9063-42E3-A6EE-25522258983B}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{081AA335-9063-42E3-A6EE-25522258983B}.Release|iPhone.Build.0 = Release|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{346EF80F-8E3A-4166-8D70-B264AA0DAB08}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
