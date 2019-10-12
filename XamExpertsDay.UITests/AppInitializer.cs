@@ -10,7 +10,7 @@ namespace XamExpertsDay.UITests
         {
             if (platform == Platform.Android)
             {
-                return ConfigureApp.Android.ApkFile("../../../XamExpertsDay.Android/bin/Release/com.xamexpertsday.devopsdemo.xamexpertsday-Signed.apk").StartApp();
+                return ConfigureApp.Android.StartApp();
             }
 
             return ConfigureApp.iOS.StartApp();

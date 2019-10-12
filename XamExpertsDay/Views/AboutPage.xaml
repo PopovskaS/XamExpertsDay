@@ -3,6 +3,7 @@
     <ContentPage.BindingContext>
         <vm:AboutViewModel />
     </ContentPage.BindingContext>
+    <ScrollView>
     <StackLayout Orientation="Vertical">
         <StackLayout Padding="40, 60,40, 60" Orientation="Vertical" BackgroundColor="#3C477E" HorizontalOptions="Fill">
                 <Image Source="xamexpertdaylogo.png" HorizontalOptions="Center" VerticalOptions="Center" />
@@ -13,4 +14,5 @@
             <Button Text="Learn more" Command="{Binding OpenWebCommand}" BackgroundColor="#2f3c7e" TextColor="White" />
         </StackLayout>
         </StackLayout>
+    </ScrollView>
 </ContentPage>
